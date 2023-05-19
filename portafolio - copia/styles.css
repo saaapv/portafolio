@@ -1,0 +1,295 @@
+/* Reset CSS básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ccbe82;
+}
+
+/* Estilos de la barra de navegación */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos de la sección de introducción */
+.intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Estilos de la sección "Sobre mí" */
+.about {
+  padding: 9px 0;
+  border-left: 40px solid #ccbe82;
+  border-right: 30px solid #ccbe82;
+
+  border-radius: 8px;
+}
+
+.about .section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about .about-text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about .about-text p {
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 20%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilos de la sección de habilidades */
+.skills {
+  background-color: #e7da5e;
+  padding: 80px 0;
+}
+
+.skills .section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills .skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.skills .skill {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+
+.skills .skill h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.skills .skill p {
+  margin-bottom: 10px;
+}
+
+/* Estilos de la sección de proyectos */
+.projects {
+  background-color: #ccbe82;
+  padding: 80px 0;
+}
+
+.projects .section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects .project-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.projects .project-list .project {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+
+.projects .project-list .project img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.projects .project-list .project h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.projects .project-list .project p {
+  margin-bottom: 10px;
+}
+
+/* Estilos de la sección de contacto */
+.contact {
+  background-color: #e7da5e;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact .section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact .contact-info ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.contact .contact-info ul li {
+  margin-bottom: 10px;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact .contact-form button {
+  padding: 10px 30px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact .contact-form button:hover {
+  background-color: #555;
+}
+
+
+/* Estilos del pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* Estilos de animaciones */
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+
+
+/* INFOGRAFIA */
+.infographic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bar {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.bar-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.bar-progress {
+  background-color: #007bff;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.bar-percentage {
+  margin-top: 5px;
+  font-weight: bold;
+}
